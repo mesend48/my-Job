@@ -11,7 +11,13 @@
 </body>
 </html>
 
-Adding new date to this file
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const dateElement = document.createElement('p');
+        dateElement.textContent = `Today's date is: ${new Date().toLocaleDateString()}`;
+        document.body.appendChild(dateElement);
+    });
+</script>
 
 <footer>
     <p>&copy; 2023 My Job. All rights reserved.</p>
